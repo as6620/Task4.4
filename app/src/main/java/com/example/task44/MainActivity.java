@@ -18,4 +18,11 @@ public class MainActivity extends AppCompatActivity {
     public void clicked(View view){
         btn = findViewById(R.id.button);
         counterClick +=1;
+        if (counterClick % 7 != 0) {
+            btn.setText("This is a click number:" + counterClick);
+        }
+        else{
+            btn.setText("Boom!");
+        }
+    }
 }
